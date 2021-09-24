@@ -1,11 +1,12 @@
-FROM node:14-alpine AS production
+FROM node:10
 
 WORKDIR /usr/src/app
 
-copy package*.json ./
+COPY package.json .
 
-RUN npm install --production
+RUN npm install
+
 COPY . .
-EXPOSE 3000
-USER node
-CMD ["node","app.js", "start:docker"]
+
+EXPOSE 8080
+CMD [ "node", "server.js" ]

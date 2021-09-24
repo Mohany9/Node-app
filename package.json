@@ -1,22 +1,12 @@
 {
-  "name": "node-app",
+  "name": "nodejs-hello-world",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Node.js on Docker",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mohany9/Node-app.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Mohany9/Node-app/issues"
-  },
-  "homepage": "https://github.com/Mohany9/Node-app#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.16.1"
   }
 }
