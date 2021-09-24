@@ -4,6 +4,8 @@ phases:
   install:
     runtime-versions:
       docker: 18
+    commands:
+        - echo "Mohany@25" | docker login -u "mohany9" --password-stdin
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
